@@ -1,0 +1,129 @@
+/* Osnovni stil za telo stranice */
+body {
+  background-color: #d6e9f7 !important; /* Svetlo plava pozadina */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Dodajemo font za konzistentnost */
+}
+
+/* Stil za header da logo i tekst budu u istoj liniji */
+header {
+  display: flex;
+  align-items: center; /* Poravnava logo i tekst vertikalno */
+  justify-content: flex-start; /* Poravnava sve na levo */
+  padding: 10px 0;
+  background-color: #d6e9f7; /* Svetlo plava pozadina za header */
+}
+
+/* Stil za logo */
+header img {
+  width: 150px; /* Širina loga */
+  height: auto; /* Visina se automatski prilagođava */
+  margin-right: 20px; /* Razmak između loga i tekst */
+}
+
+/* Stil za tekst u headeru */
+header h1 {
+  font-size: 24px;
+  margin: 0; /* Uklanja margine koje bi mogle dodati prostor */
+}
+
+/* Navigacija */
+.navbar {
+  background-color: #ffd700; /* Zlatna boja za pozadinu navigacije */
+  border-color: #ffd700; /* Zlatna boja za ivicu navigacije */
+}
+
+.navbar-nav .nav-link {
+  color: #333333; /* Tamno siva boja za tekst linkova u meniju */
+  padding: 10px 20px; /* Dodajemo padding za ravnotežu */
+  background-color: #ffffff; /* Zlatna pozadina za sve linkove */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff; /* Beli tekst pri hover-u */
+  background-color: #ff7f50; /* Korali narandžasta za pozadinu pri hover-u */
+}
+
+/* Osnovni stil za meni */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333333; /* Tamno siva boja za tekst linkova u meniju */
+  background-color: #f2f1ea; /* Zlatna pozadina za sve linkove */
+}
+
+.menu li:hover > a {
+  background-color: #ff7f50; /* Tomatno crvena boja pri hover-u */
+  color: #ffffff; /* Beli tekst pri hover-u */
+}
+
+/* Stil za padajući meni */
+.menu .dropdown-content {
+  display: none;
+  background-color: #f2f1ea; /* Zlatna boja za pozadinu padajućeg menija */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.menu .dropdown-content li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333333; /* Tamno siva za tekst stavki u padajućem meniju */
+}
+
+.menu .dropdown-content li:hover a {
+  background-color: #ff7f50; /* Korali narandžasta pri hover-u stavki */
+  color: #ffffff; /* Beli tekst pri hover-u */
+}
+
+.menu .dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Stil za sekciju sa savetima */
+.saveti-sekcija {
+  background-color: #ffffff; /* Bela pozadina za sekciju sa savetima */
+  padding: 30px 20px;
+  border-radius: 8px; /* Zaobljeni ivici */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Blagi senčasti efekat */
+  margin: 20px 0;
+}
+
+/* Stil za naslov sekcije */
+.saveti-sekcija h2 {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Stil za tekst u sekciji sa savetima */
+.saveti-sekcija p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+/* Stil za slike u sekciji sa savetima */
+.saveti-sekcija img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px; /* Zaobljeni ivici slika */
+} 
